@@ -5,7 +5,7 @@
     <div class="panel panel-primary" style="width: 300px">
         <div class="panel-heading" style="background-color: #802022">
             <a href="/paste/show/list">
-                <h4 class="public" style="text-decoration: none; color: white;">Bloques Públicos</h4>
+                <h4 class="public" style="text-decoration: none; color: white;">Bloques Público</h4>
             </a>
         </div>
         <div class="panel-body">

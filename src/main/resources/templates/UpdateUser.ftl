@@ -10,7 +10,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="nombre">Name:</label>
+                            <label for="nombre">Nombre</label>
                             <input type="text" class="form-control" id="nombre" name="name" pattern="[A-Za-z].{4,}" value="${usuarioCompleto.getName()}"/>
                         </div>
                     </div>
