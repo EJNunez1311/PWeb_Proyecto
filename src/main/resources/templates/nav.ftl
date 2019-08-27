@@ -30,9 +30,9 @@
                 <#else >
                     <li id="LoggedIn"><a id="logged" href="/user/signIn">Login</a></li>
                 </#if>
-
+                <a>&copy; Edgar Núñez 2015-0166</a>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User<span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuario<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <#if usuario??>
                             <li> <a href="/user/signOut">Sign Out</a></li>
@@ -40,8 +40,8 @@
                                 <li> <a href="/user/signIn">Sign in</a></li>
                         </#if>
 
-                        <li> <a href="/user/signUp">Sign up</a></li>
-                        <li> <a href="/user/listar/user">Create Admin</a></li>
+                        <li> <a href="/user/signUp">Registrarse</a></li>
+                        <li> <a href="/user/listar/user">Administrador</a></li>
                     </ul>
                 </li>
             </ul>

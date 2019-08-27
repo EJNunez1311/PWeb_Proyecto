@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-offset-1 col-md-9">
             <div class="myTable">
-                <h3 style="text-align: center">My Bloques</h3>
+                <h3 style="text-align: center">Mis Bloques</h3>
                 <div class="myTable-white">
                     <table class="table">
                         <thead>
@@ -24,7 +24,8 @@
                         <tr>
                             <td><a href="/paste/show/${paste.getId()}">${paste.getTitulo()}</a></td>
                             <td>${paste.getCantidadVista()}</td>
-                            <td>${paste.getFechaPublicacion()}</td>
+                            <#assign fecha = (paste.getFechaPublicacion()*1000)?number_to_datetime>
+                            <td>${fecha}</td>
                             <td>${paste.getSintaxis()}</td>
                             <td>
                                 <a href="/paste/modify/${paste.getId()}">

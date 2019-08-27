@@ -39,7 +39,7 @@
                     </div>
                     <div class="col-md-5">
                         <div class="form-group" style="margin-top:77px">
-                            <label for="syntax">Syntax</label>
+                            <label for="syntax">Sintaxis</label>
                             <select class="form-control" name="syntax" id="syntax">
                                 <option selected="disabled">Seleccione</option>
                                 <option>apache</option>
@@ -86,7 +86,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="expirationDate">Expiration Date</label>
+                            <label for="expirationDate">Fecha de expiración</label>
                             <select class="form-control" name="expirationDate" id="expirationDate" >
                                 <option selected="disabled">Seleccione</option>
                                 <option>never</option>
@@ -98,7 +98,7 @@
                                 <option>1 week</option>
                             </select>
                             <div class="form-group">
-                                <label for="expositionType">Exposition Type</label>
+                                <label for="expositionType">Tipo de exposición</label>
                                 <select class="form-control" name="expositionType" id="expositionType" >
                                     <option selected="disabled">Seleccione</option>
                                     <option>public</option>
@@ -109,7 +109,7 @@
                             <div class="row">
                                 <div class="col-md-offset-6 col-md-6">
                                     <div class="form-group" style="margin-top:190px">
-                                        <button class="btn btn-primary form-control" type="submit">Create New Paste
+                                        <button class="btn btn-primary form-control" type="submit">Publicar Bloque
                                         </button>
                                     </div>
                                 </div>

@@ -32,7 +32,7 @@
 
                     <div class="col-md-6">
                             <div class="form-group">
-                                <label for="occupation">Occupation</label>
+                                <label for="occupation">Ocupación</label>
                                 <input type="text" class="form-control" pattern="[A-Za-z].{5,}" id="occupation" class="form-control" name="occupation">
                             </div>
                     </div>
@@ -42,13 +42,13 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="phoneNumber">Phone Number</label>
+                            <label for="phoneNumber">Teléfono</label>
                             <input type="tel" class="form-control" min="0" step="1" pattern="\d*" id="phoneNumber" name="phoneNumber">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="dateOfBirth"> Date of Birth</label>
+                            <label for="dateOfBirth">Fecha de Nacimiento</label>
                             <input type="date" id="dateOfBirth" pattern="\d{1,2}/\d{1,2}/\d{4}" name="dateOfBirth" class="form-control">
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label id="photo">Choose Perfil Icon</label>
+                            <label id="photo">Icono de perfil</label>
                             <input type="file" name="photo" class="form-control">
                         </div>
                     </div>

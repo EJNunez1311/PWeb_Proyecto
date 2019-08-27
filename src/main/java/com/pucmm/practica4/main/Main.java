@@ -65,7 +65,7 @@ public class Main {
 //----------------------------Paste CRUD ----------------------------------------
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
-            model.put("titulo", "Welcome Page| Copy & Paste");
+            model.put("titulo", "Página Principal");
             Usuario usuario = request.session(true).attribute("usuario");
             if (usuario != null) {
                 model.put("usuario", usuario.getUsername());
@@ -290,7 +290,7 @@ public class Main {
 
                 get("/list", (request, response) -> {
                     Map<String, Object> model = new HashMap<>();
-                    model.put("titulo", "Show all User");
+                    model.put("titulo", "Lista Bloques");
                     PasteServices pasteServices = PasteServices.getInstancia();
 
                     model.put("pastes", pasteServices.getPasteByCantAccAndPublic(0));
@@ -445,7 +445,7 @@ public class Main {
 
             get("/update/profile", (request, response) -> {
                 Map<String, Object> model = new HashMap<>();
-                model.put("titulo", "update user profile");
+                model.put("titulo", "Actualización de Perfil");
 
                 Usuario usuario = request.session(true).attribute("usuario");
                 if (usuario == null) {
@@ -465,7 +465,7 @@ public class Main {
                     request.raw().setAttribute("org.eclipse.jetty.multipartConfig", multipartConfigElement);
                 }
                 Map<String, Object> model = new HashMap<>();
-                model.put("titulo", "update user profile");
+                model.put("titulo", "Update Profile");
 
                 Usuario usuario = request.session(true).attribute("usuario");
                 usuario.setName(request.queryParams("name"));
@@ -517,7 +517,7 @@ public class Main {
                 UsuarioServices usuarioServices1 = UsuarioServices.getInstancia();
                 Usuario usuario1 = usuarioServices1.find(usuario.getId());
                 List<Paste> pastes = usuario1.getPastes();
-                model.put("titulo", "Show list Of user Paste");
+                model.put("titulo", "Mis Bloques");
                 model.put("pastes", pastes);
 
                 return new ModelAndView(model, "verPasteBin.ftl");
@@ -527,7 +527,7 @@ public class Main {
         get("/listar/user", (request, response) -> {
             ArrayList<Usuario> eTemp = new ArrayList<>();
             Map<String, Object> model = new HashMap<>();
-            model.put("titulo", "Create an admin");
+            model.put("titulo", "Opción Administrador");
 
             Usuario usuario = request.session(true).attribute("usuario");
             if (usuario == null || !usuario.getAdministrador()) {

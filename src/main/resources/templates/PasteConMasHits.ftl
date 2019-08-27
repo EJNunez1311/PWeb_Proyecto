@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-offset-1 col-md-9">
             <div class="myTable">
-                <h3 style="text-align: center">Public Paste</h3>
+                <h3 style="text-align: center">Bloques Publicos</h3>
                 <#if pasteSize??>
                     <p id="pasteSize" style="display: none">${pasteSize}</p>
                 </#if>
@@ -13,10 +13,10 @@
                     <table class="table">
                         <thead>
                         <tr>
-                            <th>Name/Title</th>
-                            <th>Hits</th>
-                            <th>Posted</th>
-                            <th>Syntax</th>
+                            <th>Título</th>
+                            <th>Visitas</th>
+                            <th>Fecha de posteo</th>
+                            <th>Sintasis</th>
                         </tr>
                         </thead>
                     <tbody id="table-body">
